@@ -16,7 +16,7 @@ func main() {
 		go f(&x, "first")
 		go f(&x, "second")
 		time.Sleep(5 * time.Millisecond)
-		x += 1
+		x++
 	}
 	fmt.Printf("Main: x=%d\n", x)
 }
